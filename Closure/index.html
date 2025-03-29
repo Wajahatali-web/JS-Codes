@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let message = "GOOD GLOBAL";
+        // function hello() {
+        //     let message = "GOOD MORNING";
+        //     {
+        //         let message = "GOOD AFTERNOON";
+        //         console.log("hello " + message)
+        //     }
+        //     let c = function hello1(){
+        //         console.log("I am c" + message)
+        //     }
+        //     return c
+        // }
+        // c = hello()
+        // c()
+
+        function returnfunc() {
+            const x = () => {
+                let a = 1
+                console.log(a)
+                const y = () => {
+                    // let a = 2
+                    console.log(a)
+                    const z = () => {
+                        let a = 3
+                        console.log(a)
+                    }
+                    z()
+                }
+                a = 88
+                y()
+            }
+            return x
+        }
+        let d = returnfunc()
+        d()
+    </script>
+</body>
+
+</html>

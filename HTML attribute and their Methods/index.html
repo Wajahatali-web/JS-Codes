@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first" class="container" style="color: blue;" data-game="mario" data-player="Wajahat">
+        Hello World
+    </div>
+
+    <script>
+       let first = document.getElementById("first")
+       let a = first.getAttribute("class")
+        console.log(a)
+
+        // console.log(first.hasAttribute("class"))
+        // console.log(first.hasAttribute("style"))
+        // console.log(first.setAttribute("class","second"))
+        // console.log(first.setAttribute("hidden","true"))
+        // console.log(first.setAttribute("attribute","value"))
+        // console.log(first.removeAttribute("class"))
+        // console.log(first.attributes)
+        // console.log(first.attributes.class)
+        // console.log(first.attributes.style)
+        console.log(first.dataset)
+        console.log(first.dataset.game)
+        console.log(first.dataset.player)
+    </script>
+</body>
+</html>

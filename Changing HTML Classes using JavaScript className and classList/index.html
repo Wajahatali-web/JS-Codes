@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+            color: white;
+        }
+        .yellow{
+            background-color: yellow;
+            color: black;
+        }
+        .green{
+            background-color: greenyellow;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        this is my first div
+    </div>
+    <div id="second" class="yellow">
+        This is second div
+    </div>
+
+    <script>
+        first.className = "red" 
+        // let a = second.classList
+        // console.log(a)
+
+        second.classList.remove("yellow")
+        second.classList.add("green")
+        // second.classList.toggle("green") // change the class if it doesnt exist otherwise remove it 
+
+        let a = second.classList.contains("green")  // returns true or false
+        console.log(a)
+    </script>
+</body>
+</html>

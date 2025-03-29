@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .bulb{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+            background-color: yellow;
+        }
+        .light{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+            background-color: lightblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="bulb">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container mt-5 border text-center">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-success mr-3">Click me</button>
+                <button class="btn class btn-info mr-3">Click me</button>
+            </div>
+        </div>
+    </div>
+    <a href="https://www.google.com"><button>Google</button></a> -->
+
+    <script>
+
+        let a = document.getElementsByClassName("bulb")[0]
+        const func = ()=>{
+            a.classList.toggle("light")
+        }
+        let b = setInterval(func,1000,"<div class='bulb'></div>")
+        //Q3
+        // let a = document.getElementsByClassName("class")[0]
+        // let x = function(e){
+        //     window.location = "https://www.google.com";
+        // }
+        // a.addEventListener("click", x)
+
+    </script>
+</body>
+
+</html>

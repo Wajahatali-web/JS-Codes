@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>hello All</p>
+        <p>Hey how are uhhh</p>
+    </div>
+
+    <script>
+        let a = document.getElementsByTagName("p")[0]
+        console.log(a)
+        // a.innerHTML = a.innerHTML + "<h1>Hello World</h1>";
+
+        // The Element.prepend() method inserts a set of Node objects or strings before the first child of the Element
+        // The Element.append() method inserts a set of Node objects or strings after the last child of the Element.
+
+        let div = document.createElement("div");
+        div.id = "boss";
+        div.innerHTML = "<h1>Hello sir</h1>";
+        // a.prepend(div)
+        // a.before(div)
+        // a.after(div)
+        a.replaceWith(div)
+    </script>
+</body>
+
+</html>

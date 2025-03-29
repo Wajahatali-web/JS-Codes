@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="navbar navbar-expand-lg navbar-light bg-light">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link red">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <!-- <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+    </table> -->
+<!-- 
+    <div>
+        <p>hello</p>
+        <span>hello</span>
+        <p>hello</p>
+    </div> -->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
+
+    <script>
+        //Q1
+        // let a = document.body.firstElementChild.firstElementChild.firstElementChild;
+        // let a = document.getElementsByClassName("red")
+        // console.log(a)
+        // a[0].style.color = "red";
+
+        //q3
+
+        // let a = document.body.firstElementChild
+        // a.style.color = "green"
+        // let b= document.body.firstElementChild.lastElementChild
+        // b.style.color = "red"
+
+        // let c = document.body.getElementsByTagName("div")[0].firstElementChild.style.color = "green"
+        // let d = document.body.getElementsByTagName("div")[0].lastElementChild.style.color = "green"
+        // console.log(c)
+         
+        Array.from(document.body.getElementsByTagName("li")).forEach((element) => {
+            element.style.background = "cyan";
+        });
+
+    </script>
+</body>
+
+</html>

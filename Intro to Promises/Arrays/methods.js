@@ -1,0 +1,22 @@
+let arr = [1,2,3,4,5]
+let a = arr.toString()
+console.log(a)
+let b = arr.join("-")
+console.log(b , typeof b)
+// arr.pop()
+// console.log(arr)
+// arr.push(6)
+// c = arr.push(6)
+// console.log(arr)
+// console.log(c)
+// arr.shift()
+// d = arr.shift()
+// console.log(arr , d)
+// arr.unshift(0)
+// // e = arr.unshift(0)
+// console.log(arr)
+// delete arr[2]
+// console.log(arr)
+arr1 = [6,7,8,9]
+ f = arr.concat(arr1)
+console.log(f)
